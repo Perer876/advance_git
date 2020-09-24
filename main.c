@@ -1,9 +1,17 @@
 #include <stdio.h>
-#include "funciones.h"
 
 int main() {
+    char nombre[100];
+    unsigned int edad;
     unsigned short numero;
 
+    printf("Hola mundo\n");
+    printf("Nombre: ");
+    fgets(nombre, sizeof(nombre), stdin);
+    printf("Hola %s", nombre);
+    printf("Edad: ");
+    scanf("%u", &edad);
+    printf("Vas a cumplir %u", edad + 1);
     while(1) {
         printf("Ingresa un numero entre el 0 y el 20: ");
         scanf("%u", &numero);
